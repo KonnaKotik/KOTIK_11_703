@@ -21,6 +21,7 @@ public class Main {
             p = -p;
             k++;
         }
+
         System.out.println(s);
 
     }
