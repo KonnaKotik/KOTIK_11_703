@@ -18,13 +18,18 @@ public class Main {
         double s=0;
 
         while(k <= n) {
+<<<<<<< HEAD
             s += (double)p*t/  (one*(2*k + 1));
             one = one*(k + 1);
+=======
+            s += (double)p * Math.pow(x, 2*k + 1) /  (one*(2*k + 1));//плохо получаем степень
+            one = one*(k + 1);  //здесь будет переполнение очень быстро
+>>>>>>> 7145f9c75acf287b5edb2360be4021c7bff3118e
             p = -p;
             t *= x*x;
             k++;
         }
-
+        //нужна общая формула получения следующего слагаемого из предыдущего
         System.out.println(s);
 
     }
