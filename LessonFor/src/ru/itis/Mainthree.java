@@ -10,15 +10,14 @@ public class Mainthree {
             int
                     n = scanner.nextInt(),
                     x = scanner.nextInt(),
-                    k = 1, one = 1, two = 1;
+                    k = 1,
 
-            double s=0;
+            double s=0, t = x*x/2;
 
             while (k <= n) {
-                one *= (2*k-1);
-                two *= (2*k);
-                s += (double) one*Math.pow((double)x,2*k) / two;
+                s += t;
                 k++;
+                t *= (double) x*x*(2*k - 2) / 2*k;
             }
             System.out.println(s);
 

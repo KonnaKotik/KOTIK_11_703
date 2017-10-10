@@ -2,23 +2,24 @@ package ru.itis;
 
 import java.util.Scanner;
 
-public class Maintwo {
+public class Exexrcise12b {
     public static void main(String[] args) {
-        // write your code here
+
         Scanner scanner = new Scanner(System.in);
 
         int
-                n = scanner.nextInt(),
                 x = scanner.nextInt(),
-                k = 0, p = 1;
+                n = 0,
+                p = 1;
 
-
-        double s = 0,t = x;
-
-        while (k <= n) {
+        double
+                e = 0.0001,
+                t = x,
+                s = 0;
+        while (Math.abs(t) > e) {
             s += p*t;
-            k++;
-            t *= (double) x*x*x*x*(4*k - 3)/ ((2*k - 1)*2*k*(4*k + 1));
+            n++;
+            t *= (double)x*x / (2*n*(2*n + 1));
             p = -p;
         }
         System.out.println(s);
