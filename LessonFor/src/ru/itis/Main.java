@@ -1,4 +1,4 @@
-package ru.itis;
+package ru.itis;     //Какая задача?
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class Main {
             n++;
             k++;
             p = -p;
-            t *= (double) x*x*(k - 2) / k*(2*k + 1);
+            t *= (double) x*x*(k - 2) / k*(2*k + 1); //что за формула?
         }
         //нужна общая формула получения следующего слагаемого из предыдущего
         System.out.println(s);
