@@ -1,6 +1,6 @@
 package ru.itis;
 
-import java.util.Scanner;
+import java.util.Scanner; // Задание № 10(а)
 
 public class Main {
 
