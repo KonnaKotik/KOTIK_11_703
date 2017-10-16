@@ -5,7 +5,6 @@ import java.util.Scanner; // Задание № 10(а)
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
@@ -21,9 +20,8 @@ public class Main {
             n++;
             k++;
             p = -p;
-            t *= (double) x*x*(k - 2) / k*(2*k + 1); //что за формула?
+            t *= (double) x*x*(k - 2) / k*(2*k + 1);
         }
-        //нужна общая формула получения следующего слагаемого из предыдущего
         System.out.println(s);
 
     }
