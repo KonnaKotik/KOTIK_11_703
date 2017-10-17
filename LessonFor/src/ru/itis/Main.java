@@ -20,7 +20,7 @@ public class Main {
             n++;
             k++;
             p = -p;
-            t *= (double) x*x*(k - 2) / k*(2*k + 1);
+            t *= (double) x*x*(k - 2) / k*(2*k + 1); //что за формула?
         }
         System.out.println(s);
 
