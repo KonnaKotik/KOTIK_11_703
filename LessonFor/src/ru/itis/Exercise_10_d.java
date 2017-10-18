@@ -9,7 +9,7 @@ public class Exercise_10_d {
         double
                 x = scanner.nextDouble(),
                 s = 0,
-                t = x;
+                t = x, t1 = x, t2 = x;
 
         int
                 n = scanner.nextInt(),
@@ -18,9 +18,21 @@ public class Exercise_10_d {
         while (k <= 2*n) {
             s += t;
             k++;
-            t *= x*(k - 1) / k;
+            t1 *= x;
+            t2 *= x;
+            if (k % 2 == 0) {
+                t2 /= k;
+                t = t2;
+            }
+            else {
+                t1 /= k;
+                t = t1;
+            }
+
+            }
+            System.out.println(s);
         }
-        System.out.println(s);
+
 
     }
-}
+
