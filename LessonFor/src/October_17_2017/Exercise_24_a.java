@@ -13,7 +13,7 @@ public class Exercise_24_a {
         c1 = Math.sin(x);
         b = b0*b1 - c0*c1;
         c = c0*b1 + b0*c1;
-        t = c;
+        t = c1;
 
         while ( t <= e) {
             s += t;
