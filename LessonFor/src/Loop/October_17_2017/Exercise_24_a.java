@@ -15,7 +15,7 @@ public class Exercise_24_a {
         c = c0*b1 + b0*c1;
         t = c1;
 
-        while ( t <= e) {
+        while ( Math.abs(t) >= e) {
             s += t;
             c0 = c;
             b0 = b;

@@ -16,10 +16,10 @@ public class Exercise_24_b {
         t = b1;
         s = t;
 
-        while (  t>= e) {
+        while (  Math.abs(t)>= e) {
             if (k % 2 == 1) {
                 s += p * t;
-                t *= b / (b0*k);
+                t = b / k;
             }
             c0 = c;
             b0 = b;
