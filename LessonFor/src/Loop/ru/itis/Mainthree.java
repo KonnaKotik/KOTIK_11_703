@@ -1,4 +1,4 @@
-package ru.itis; // Какая задача?
+package ru.itis; // +
 
 import java.util.Scanner; // Задание № 10(в)
 
