@@ -1,4 +1,4 @@
-package Homework;
+package Homework;//-
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class Exercise_9_d {
 
         while (m <= n) {
             s += 1.0 / ((2*m +1)*t);
-            t *= 9.0;
+            t *= 9.0; //нельзя накапливать степень
             m++;
         }
         System.out.println(s);
