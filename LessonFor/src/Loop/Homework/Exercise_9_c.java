@@ -1,4 +1,4 @@
-package Homework;
+package Homework;//-
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class Exercise_9_c {
                 t = 1;
 
         while (m <= n) {
-            s += p / ((2*m + 1)*t);
+            s += p / ((2*m + 1)*t);  //неверное тело цикла
             t *= 3.0;
             p = -p;
             m++;
