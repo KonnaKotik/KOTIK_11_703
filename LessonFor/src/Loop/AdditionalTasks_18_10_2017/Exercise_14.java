@@ -1,4 +1,4 @@
-package AdditionalTasks_18_10_2017;
+package AdditionalTasks_18_10_2017;//+
 
 import java.util.Scanner;
 
