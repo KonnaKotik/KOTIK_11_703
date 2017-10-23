@@ -1,4 +1,4 @@
-package Homework;
+package Homework;//-
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class Exercise_9_b {
 
         while (m <= n) {
             s += t;
-            t *= (double)(m-1)*(m-1) / (2*m*(2*m - 1));
+            t *= (double)(m-1)*(m-1) / (2*m*(2*m - 1));//почему переставлены местами? При m=n t сформируется, но в s не попадет
             m++;
         }
         System.out.println(s);
