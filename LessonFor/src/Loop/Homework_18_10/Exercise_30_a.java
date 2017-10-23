@@ -1,4 +1,4 @@
-package Homework_18_10;
+package Homework_18_10;//+
 
 
 public class Exercise_30_a {
