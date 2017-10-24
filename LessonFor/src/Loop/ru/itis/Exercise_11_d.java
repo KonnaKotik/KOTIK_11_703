@@ -15,10 +15,11 @@ public class Exercise_11_d {
                 s = 1, t = 1;
 
         while (i <= n) {
-            s *= t;
             t *= Math.sin(i) / Math.cos(i);//как-то вы странно формируете тело цикла. При i = n получаем sin(n) и cos(n),
             //а i становится равным n+1 и подсчитанное t в S не попадает.
+            s *= t;
             i++;
+            
         }
         System.out.println(s);
 
