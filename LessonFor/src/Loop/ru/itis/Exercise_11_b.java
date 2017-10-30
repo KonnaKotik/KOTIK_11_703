@@ -10,7 +10,7 @@ public class Exercise_11_b {
         int
                 n = scanner.nextInt(),
                 k = 0;
-        double  s = 0, t = 0;
+        double  s = 0, t = 1;
 
         while (k <= n) {
             s += t;
