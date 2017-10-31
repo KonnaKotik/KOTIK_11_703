@@ -1,4 +1,4 @@
-package Array.October_24_2017;
+package Array.October_24_2017;//-
 
 import java.util.Random;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class ExerciseM_1 {
             }
 
         }
-        System.out.println(k);
+        System.out.println(k);  //неверно считает
         System.out.println(min);
 
         }
