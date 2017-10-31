@@ -3,11 +3,10 @@ package Array.November_1_2017;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ExerciseM_8_2 {
+public class ExerciseM_8_3 {
     public static void main(String[] args) {
-
-        Random r = new Random();
         Scanner scanner = new Scanner(System.in);
+        Random r = new Random();
 
         int m = scanner.nextInt();
         int[] s = new int[m];
@@ -64,12 +63,26 @@ public class ExerciseM_8_2 {
 
         System.out.println(' ');
 
-        for ( int k = 0; k < m; k++) {
-            if ((t1[k] == 1) && (t2[k] == 1)) count++;
+        for (int k = 0; k < m; k++) {
+            if ( (t1[k] == 1) || (t2[k] == 1))
+                System.out.print('1' + " ");
+            else System.out.print('0' + " ");
         }
 
-        if ( (count == card1) && (card2 >= card1)) sooth = true;
+        System.out.println(' ');
 
-        System.out.println(sooth);
+        for (int k = 0; k < m; k++) {
+            if ( (t1[k] == 1) && (t2[k] == 1))
+                System.out.print(t1[k] + " ");
+            else System.out.print('0' + " ");
+        }
+
+        System.out.println(' ');
+
+        for (int k = 0; k < m; k++) {
+            if ( (t1[k] == 1) && (t2[k] == 0))
+                System.out.print(t1[k] + " ");
+            else System.out.print('0' + " ");
+        }
     }
 }
