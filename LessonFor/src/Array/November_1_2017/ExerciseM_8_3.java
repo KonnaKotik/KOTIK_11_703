@@ -1,4 +1,4 @@
-package Array.November_1_2017;
+package Array.November_1_2017;//-
 
 import java.util.Random;
 import java.util.Scanner;
@@ -82,7 +82,7 @@ public class ExerciseM_8_3 {
         for (int k = 0; k < m; k++) {
             if ( (t1[k] == 1) && (t2[k] == 0))
                 System.out.print(t1[k] + " ");
-            else System.out.print('0' + " ");
+            else System.out.print('0' + " "); //причем здесь печать?
         }
     }
 }
