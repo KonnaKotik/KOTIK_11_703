@@ -1,4 +1,4 @@
-package Array.October_24_2017;
+package Array.October_24_2017;//-
 
 import java.util.Random;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class ExerciseM_3 {
             }
         }
         for ( int i = (k + 1); i < n; i++ ) {
-            s *= a[i];
+            s *= a[i];    //проверка на нули
         }
         System.out.println(s);
     }
