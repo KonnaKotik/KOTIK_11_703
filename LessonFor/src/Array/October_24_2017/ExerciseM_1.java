@@ -26,7 +26,7 @@ public class ExerciseM_1 {
             }
 
         }
-        System.out.println(k);  //неверно считает
+        System.out.println(k + 1);  //неверно считает
         System.out.println(min);
 
         }
