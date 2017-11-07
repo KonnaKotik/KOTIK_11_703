@@ -1,6 +1,5 @@
 package Array.November_1_2017_ClassWork;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class ExerciseM_22_3 {
@@ -12,23 +11,26 @@ public class ExerciseM_22_3 {
         int[] a = new int[n];
         boolean f = true, f1 = true;
 
-        Random r = new Random();
 
         for (int i = 0; i < n; i++) {
-            a[i] = r.nextInt(2);
+            a[i] = scanner.nextInt();
             System.out.print(a[i] + " ");
         }
 
         System.out.println(" ");
 
-        for (int i = 0; i < (n-1) & f; i++) {
-            if (a[i] < a[i+1])
+        for (int i = 0; i < (n-1) & (f || f1); i++) {
+            if (a[i] <= a[i+1])
                 f = false;
+            if (a[i] >= a[i+1])
+                f1 = false;
         }
 
         if (f)
-            System.out.println("yes");
+            System.out.println("Упорядочены по убыванию");
+        else if (f1)
+            System.out.println("Упорядочены по возрастанию");
         else
-            System.out.println("no");
+            System.out.println("Не упордочены");
     }
 }
