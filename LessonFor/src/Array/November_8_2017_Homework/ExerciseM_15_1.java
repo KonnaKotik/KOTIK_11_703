@@ -1,4 +1,4 @@
-package Array.November_8_2017_Homework;
+package Array.November_8_2017_Homework;//-
 
 import java.util.Scanner;
 
@@ -34,9 +34,13 @@ public class ExerciseM_15_1 {
             k++;
             t = k;
         }
-        if (a[n-2] > a[n-1]) s = 1;
+        if (a[n-2] > a[n-1]) s = 1;    //очень запутанный алгоритм
 
         System.out.println(s + " - самая короткая неуюывающая цепочка");
         System.out.println(t + " - самая длинная неубывающая цепочка");
     }
 }
+/*13
+2 - самая короткая неуюывающая цепочка
+5 - самая длинная неубывающая цепочка           это неверный ответ
+*/
