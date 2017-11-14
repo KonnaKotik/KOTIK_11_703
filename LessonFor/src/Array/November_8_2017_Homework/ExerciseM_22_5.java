@@ -28,7 +28,7 @@ public class ExerciseM_22_5 {
                 if (i != j && a[i] == a[j])
                     f = false;
             }
-            if (f == true)
+            if (f == true)    // просто  if (f)
                 t++;
         }
 
