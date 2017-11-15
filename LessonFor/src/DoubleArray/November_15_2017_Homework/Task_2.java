@@ -21,7 +21,6 @@ public class Task_2 {
         int
                 n = scanner.nextInt(),
                 m = scanner.nextInt(),
-                t = 0,
                 matrix[][] = new int[n][m];
 
         for (int i = 0; i < n; i++) {

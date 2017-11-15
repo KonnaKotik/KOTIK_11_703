@@ -20,9 +20,8 @@ public class Task_4 {
 
         int
                 n = scanner.nextInt(),
-                m = scanner.nextInt(),
                 t = 0,
-                matrix[][] = new int[n][m];
+                matrix[][] = new int[n][n];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
@@ -33,7 +32,15 @@ public class Task_4 {
         showMatrix(matrix);
 
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-
+            for (int j = i + 1; j < matrix[i].length; j++) {
+                t = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = t;
             }
+        }
+
+        System.out.println(" ");
+
+        showMatrix(matrix);
+    }
 }
