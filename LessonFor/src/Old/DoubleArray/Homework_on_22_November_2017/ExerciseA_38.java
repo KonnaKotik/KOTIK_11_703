@@ -22,8 +22,7 @@ public class ExerciseA_38 {
                 n = scanner.nextInt(),
                 t1 = 1,
                 t2 = 1,
-                k = 0,
-                x = 0;
+                k = 0;
 
         int
                 matrix[][] = new int[n][n];
@@ -42,19 +41,25 @@ public class ExerciseA_38 {
             t2 = matrix[k][k];
             if (t1 == 0) {
                 t1 = 1;
+                matrix[i][k] = 1;
             }
             if (t2 == 0) {
                 t2 = 1;
+                matrix[k][k] = 1;
             }
             for (int j = k; j < n; j++) {
-                    matrix[i][j] *= t2;
-                    matrix[k][j] *= t1;
-                    matrix[i][j] -= matrix[k][j];
+                matrix[i][j] *= t2;
+                matrix[k][j] *= t1;
+                if (i != j) {
+                    matrix[i][j] = matrix[k][j] - matrix[i][j];
+                }
             }
             if (matrix[n - 1][k] == 0) {
-                i = 1;
                 k++;
-                x++;
+                i = k;
+                if (matrix[n - 1][n - 2] == 0) {
+                    i = n;
+                }
             }
         }
 
