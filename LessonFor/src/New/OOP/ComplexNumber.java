@@ -1,4 +1,4 @@
-package New.OOP;
+package New.OOP; // из учебника Абрамского
 
 public class ComplexNumber {
     private double a;
@@ -92,15 +92,6 @@ public class ComplexNumber {
 
     }
 
-    public ComplexNumber pow(double pow) {
-        double powcomplex;
-        powcomplex = Math.pow(length(), pow) * (Math.cos(pow*arg())+Math.sin(pow*arg()));
-        return powcomplex;
 
-
-    }
-    public boolean equals(ComplexNumber) {
-
-}
 
 }

@@ -1,4 +1,4 @@
-package New.DoubleArray; // 2 задача
+package New.DoubleArray; // 2 задача на массивы
 
 import java.util.Random;
 import java.util.Scanner;

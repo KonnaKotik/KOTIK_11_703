@@ -1,4 +1,4 @@
-package New.DoubleArray; // 3 задача
+package New.DoubleArray; // 3 задача на массивы
 
 import java.util.Scanner;
 
@@ -28,13 +28,16 @@ public class DoubleArray_findString {
                 n = scanner.nextInt(),
                 m = scanner.nextInt();
 
-        boolean f = true, h = false;
+        boolean
+                f = true,
+                h = false;
 
         int
                 matrix[][] = new int[n][m];
 
         readMatrix(matrix);
         System.out.println(" ");
+
         showMatrix(matrix);
         System.out.println(" ");
 

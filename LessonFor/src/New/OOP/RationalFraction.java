@@ -1,4 +1,4 @@
-package New.OOP; // задача 50
+package New.OOP; // задача 50 из учебника Абрамского
 
 public class RationalFraction {
     private int a;

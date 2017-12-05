@@ -1,4 +1,4 @@
-package New.DoubleArray;
+package New.DoubleArray; // 4 задача на массивы
 
 import java.util.Scanner;
 
@@ -21,7 +21,6 @@ public class DoubleArray_findColumn {
     }
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         int
