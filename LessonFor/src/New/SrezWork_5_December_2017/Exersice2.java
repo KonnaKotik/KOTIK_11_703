@@ -14,7 +14,7 @@ public class Exersice2 {
 
         int n = 1;
 
-        x = 1 / (x0*x0*x0*x0 - 3*x0*x0 + Math.log10(x0)) + Math.sqrt((x0*x0*x0*x0 - 3*x0*x0 + Math.log10(x0)) / 2);
+        x = 1 / (x0*x0*x0*x0 - 3*x0*x0 + Math.log10(x0)) + Math.sqrt((x0*x0*x0*x0 - 3*x0*x0 + Math.log10(x0)) / 2); //static function?
 
         while(Math.abs(x - x0) > e) {
             x0 = x;
