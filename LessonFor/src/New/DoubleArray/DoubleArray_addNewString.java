@@ -64,9 +64,9 @@ public class DoubleArray_addNewString {
 
         for (int i = n - 1; i > r; i--) {
             for (int j = 0; j < m; j++) {
-                t = matrix[i+1][j];
-                matrix[i+1][j] = matrix[i][j];
-                matrix[i][j] = t;
+                t = matrix[i+1][j];     //it is not necessary
+                matrix[i+1][j] = matrix[i][j]; //It's enough
+                matrix[i][j] = t;   //it is not necessary
             }
         }
 
