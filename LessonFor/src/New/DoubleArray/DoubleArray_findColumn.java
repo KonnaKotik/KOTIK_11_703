@@ -39,7 +39,7 @@ public class DoubleArray_findColumn {
         for (int k = 0; k < n && !h; k++) {
             for (int i = 0; i < n && !h; i++) {
                 for (int j = 0; j < n && f; j++) {
-                    if ((i!=j) && (matrix[i][j] != matrix[j][k])) {
+                    if ((i!=j) && (matrix[i][j] != matrix[j][k])) {   //why (i!=j) ?
                         f = false;
                     }
                 }
