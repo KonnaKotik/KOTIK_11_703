@@ -15,7 +15,7 @@ public class PolinomTest {
     @Before
     public void setUp(){
         try {
-            polinom = new Polinom("input.txt");
+            polinom = new Polinom("polinom.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
