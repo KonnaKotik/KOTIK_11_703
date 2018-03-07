@@ -1,0 +1,53 @@
+package ru.itis;
+
+import java.util.Scanner;
+
+public class SumBigInteger {
+        public static int[] toInt(String number) {
+            char[] charArray = number.toCharArray();
+            int[] digits = new int[charArray.length];
+
+            for (int i = 0; i < digits.length; i++) {
+                digits[i] = charArray[i] - '0';
+            }
+            return digits;
+        }
+
+        public static int[] sumBigNumbers(int[] digits_one, int[] digits_two) {
+            int[] result = new int[digits_one.length + 1];
+            for (int i = result.length - 2; i >= 0; i--) {
+                result[i + 1] += (digits_one[i] + digits_two[i]) % 10;
+                result[i] += (result[i + 1] / 10) + ((digits_one[i] + digits_two[i]) / 10);
+                result[i + 1] = result[i + 1] % 10;
+            }
+
+            return result;
+        }
+
+    public static String arrayToString(int[] result) {
+        String s = "";
+        int count = 0;
+
+        if (result[0] == 0) {
+            count = 1;
+        }
+
+        for (int i = count; i < result.length; i++) {
+            s += result[i];
+        }
+        return s;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String number_one = scanner.nextLine();
+        String number_two = scanner.nextLine();
+
+        int[] result = sumBigNumbers(toInt(number_one), toInt(number_two));
+
+        System.out.println(arrayToString(result));
+
+    }
+}
