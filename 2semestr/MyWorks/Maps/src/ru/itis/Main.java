@@ -3,6 +3,7 @@ package ru.itis;
 public class Main {
 
     public static void main(String[] args) {
+
         Map<String, String> map = new HashMapImp<>();
         map.put("Marsel", "Sidikov");
         map.put("Dasha", "Shagieva");

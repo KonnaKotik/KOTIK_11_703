@@ -14,6 +14,7 @@ public class HashMapImp<K, V> implements Map<K, V> {
     @Override
     public void put(K key, V value) {
         int position = Math.abs(key.hashCode() % 10);
+        boolean f = false;
         Variable variableNew = new Variable(key,value);
         if (map[position] == null) {
             LinkedList<Variable> list = new LinkedList<>();
@@ -24,7 +25,11 @@ public class HashMapImp<K, V> implements Map<K, V> {
                     Variable variable = map[position].get(j);
                     if (variable.getKey().equals(variableNew.getKey())) {
                         map[position].set(j, variableNew);
+                        f = true;
                     }
+            }
+            if(!f) {
+                map[position].add(variableNew);
             }
         }
     }
