@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Compiler {
 
-    public  void analyze(String input) {
+    public  void analyse(String input) {
 
         char[] charArray = input.toCharArray();
         int current = 0;

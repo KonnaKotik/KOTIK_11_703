@@ -14,7 +14,7 @@ public class Main {
         System.out.println(" ");
         System.out.println(" ");
     }
-    public static void compSort(int[] array) {
+    public static void combSort(int[] array) {
         long nanoTimeBefore = System.nanoTime();
         int count = 0;
         int gap = array.length;
@@ -26,8 +26,8 @@ public class Main {
             int i = 0;
             swapped = false;
             while (i + gap < array.length) {
+                count++;
                 if (array[i] > array[i + gap]) {
-                    count++;
                     int t = array[i];
                     array[i] = array[i + gap];
                     array[i + gap] = t;
@@ -68,7 +68,7 @@ public class Main {
         int count = scanner.nextInt();
         int[] array = toArray(count);
         out(array);
-        compSort(array);
+        combSort(array);
     }
 
 

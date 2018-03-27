@@ -12,7 +12,6 @@ public class Main {
         map.put("Arina", "Kotik");
         map.put("Arina", "Kim");
         map.put("Dasha", "Best");
-        map.put("Arina", "Won");
 
         System.out.println(map.get("Marsel"));
         System.out.println(map.get("Anita"));
@@ -21,6 +20,5 @@ public class Main {
         System.out.println(map.get("Dasha"));
 
         int i = 0;
-
     }
 }

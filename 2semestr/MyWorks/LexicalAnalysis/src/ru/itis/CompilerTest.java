@@ -13,14 +13,14 @@ public class CompilerTest {
     @Test
     public void testAnalyze(){
         String input = "x3:=5;";
-        compiler.analyze(input);
+        compiler.analyse(input);
 
     }
 
     @Test(expected = SyntaxException.class)
     public void testAnalyzeBad(){
         String input = "x3=5";
-        compiler.analyze(input);
+        compiler.analyse(input);
 
     }
 
@@ -37,15 +37,15 @@ public class CompilerTest {
 
     }
 
-//    @Test
-//    public void testProcess() throws InitializeException {
-//        String input = "x1:=123;x2:=5;x3:=x1+x2;";
-//        List<Variable> expected = new ArrayList<>();
-//        expected.add(new Variable("x1", 123));
-//        expected.add(new Variable("x2", 5));
-//        expected.add(new Variable("x3", 128));
-//
-//        List<Variable> actual = compiler.process(input);
-//        assertEquals(expected, actual);
-//    }
+    @Test
+    public void testProcess2() throws InitializeException {
+        String input = "x1:=123;x2:=5;x3:=x1+x2;";
+        List<Variable> expected = new ArrayList<>();
+        expected.add(new Variable("x1", 123));
+        expected.add(new Variable("x2", 5));
+        expected.add(new Variable("x3", 128));
+
+        List<Variable> actual = compiler.process(input);
+        assertEquals(expected, actual);
+    }
 }
