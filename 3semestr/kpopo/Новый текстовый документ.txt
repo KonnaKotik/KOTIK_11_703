@@ -1,0 +1,87 @@
+create table k_pop_user
+(
+  id            serial not null
+    constraint k_pop_user_pkey
+    primary key,
+  email         varchar(50),
+  hash_password varchar(200),
+  first_name    varchar(30),
+  last_name     varchar(30),
+  address       varchar(50),
+  fandom        varchar(50)
+);
+
+alter table k_pop_user
+  owner to postgres;
+
+create table delivery
+(
+  id    serial not null
+    constraint delivery_pkey
+    primary key,
+  name  varchar(200),
+  price double precision,
+  date  integer
+);
+
+alter table delivery
+  owner to postgres;
+
+create table category
+(
+  id     serial not null
+    constraint category_pkey
+    primary key,
+  name   varchar(200),
+  fandom varchar(50)
+);
+
+alter table category
+  owner to postgres;
+
+create table merch
+(
+  id          serial not null
+    constraint merch_pkey
+    primary key,
+  category_id bigint
+    constraint merch_category_id_fkey
+    references category,
+  price       double precision,
+  name        varchar(200)
+);
+
+alter table merch
+  owner to postgres;
+
+create table "order"
+(
+  id         serial not null
+    constraint order_pkey
+    primary key,
+  date       timestamp,
+  user_id    bigint
+    constraint order_user_id_fkey
+    references k_pop_user,
+  deliver_id bigint
+    constraint order_deliver_id_fkey
+    references delivery,
+  status     char
+);
+
+alter table "order"
+  owner to postgres;
+
+create table merch_order
+(
+  merch_id bigint
+    constraint merch_order_merch_id_fkey
+    references merch,
+  order_id bigint
+    constraint merch_order_order_id_fkey
+    references "order"
+);
+
+alter table merch_order
+  owner to postgres;
+
