@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  font-family: sans-serif;
+}
+ .loginbox {
+   width: 520px;
+   height: 600px;
+   background: #ffffff;
+   color: #000000;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   box-sizing: border-box;
+   padding: 90px 30px;
+ }
+
+ h1{
+   margin: 0 ;
+   padding: 0 0 20px;
+   text-align: center;
+   font-size: 33px;
+ }
+
+ p {
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+ }
+
+ .loginbox input {
+   width: 100% ;
+   margin-bottom: 20px;
+ }
+
+ .loginbox input[type = "email"], input[type = "password"] {
+   border: none;
+   border-bottom: 1px solid #95cdf0;
+   background: transparent;
+   outline: none;
+   height: 40px;
+   color: #fabbc6;
+   font-size: 16px;
+ }
+
+ .loginbox input[type = "submit"] {
+   border: none;
+   outline: none;
+   height: 40px;
+   background: #95cdf0;
+   color: #ffffff;
+   font-size: 18px;
+   border-radius: 20px;
+ }
+.loginbox input[type = "submit"]:hover {
+  cursor: pointer;
+  background: #adb1ed;
+  color: #ffffff;
+}
+.loginbox .form-checkbox input {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+
+ }
+
+ .loginbox .form-checkbox span {
+    font-size: 15px;
+    font-weight: normal;
+    display: inline-block;
+    text-align: left;
+    width: 220px;
+ } 
+ 
